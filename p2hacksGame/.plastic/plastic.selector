@@ -1,0 +1,4 @@
+repository "p2hacksGame@T4sea1392@cloud"
+  path "/"
+    br "/main"
+    co "/main"
