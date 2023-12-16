@@ -1,15 +1,13 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  P2HACKS2023
 //
-//  Created by 児玉拓海 on 2023/12/12.
+//  Created by 児玉拓海 on 2023/12/15.
 //
 
 import SwiftUI
-/*
- ここで各Viewを司るよ
- */
-struct ContentView: View {
+
+struct HomeView: View {
     var body: some View {
         ZStack {
             /* 背景追加 */
@@ -25,5 +23,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    HomeView()
 }
