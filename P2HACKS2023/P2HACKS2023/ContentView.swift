@@ -17,6 +17,7 @@ struct ContentView: View {
     private let dotAppearance = UIPageControl.appearance()
     
     var body: some View {
+
         NavigationStack {
             ZStack {
                 /* 背景追加 */
