@@ -10,6 +10,8 @@ import SwiftUI
  ここで各Viewを司るよ
  */
 struct ContentView: View {
+    @ObservedObject var speechManager = SpeechManager()
+
     var body: some View {
         ZStack {
             /* 背景追加 */
@@ -21,6 +23,12 @@ struct ContentView: View {
             /* アスペクト比を維持 */
                 .aspectRatio(contentMode: .fill)
         } /* Zstackここまで */
+        
+        //音声認識を開始するためのボタン
+        Button("Start Recording") {
+                       speechManager.startRecording()
+                   }
+                   .padding()
     }
 }
 
