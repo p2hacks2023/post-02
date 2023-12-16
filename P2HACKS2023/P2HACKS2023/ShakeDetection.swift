@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreMotion
 
-class ShakeDetectionViewModel: ObservableObject {
+class ShakeDetection: ObservableObject {
     @Published var shakeCount = 0
     @Published var countdownSeconds = 5
 
@@ -37,6 +37,7 @@ class ShakeDetectionViewModel: ObservableObject {
         stopMotionDetection()
         timer?.invalidate()
         resetCountdown()
+        print("最終振りカウント: \(shakeCount)")
     }
 
     private func startMotionDetection() {
@@ -64,13 +65,14 @@ class ShakeDetectionViewModel: ObservableObject {
     private func resetCountdown() {
         countdownSeconds = 5
     }
+    
 }
 
 
 //スマホの揺れを計測するトリガーとしてボタンが欲しかったから便宜上作ったView。消して大丈夫。
 struct ShakeDetectionView: View {
     //インスタンス生成
-    @StateObject private var viewModel = ShakeDetectionViewModel()
+    @StateObject private var viewModel = ShakeDetection()
 
     var body: some View {
         VStack {
