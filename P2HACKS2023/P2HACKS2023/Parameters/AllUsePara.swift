@@ -40,7 +40,7 @@ let toGameButtonW = 150.0
 let toGameButtonH = 105.0
 /* 左 ボタン座標 */
 let toGameLeButtonX = CGFloat(bounds.width)/2 - CGFloat(bounds.width)/4
-let toGameButtonY = CGFloat(bounds.height) - toGameButtonH * 1.5
+let toGameButtonY = CGFloat(bounds.height) - toGameButtonH * 1.3
 /* 右 オフセット */
 let toGameRiButtonX = CGFloat(bounds.width)/4
 /*
@@ -78,3 +78,8 @@ let BattleTextWH = 170.0
 let BattleTextX = CGFloat(bounds.width)/2
 let BattleTextY = CGFloat(bounds.height)/2
 
+/* 3D model */
+let modelW = CGFloat(bounds.width)
+let modelH = CGFloat(bounds.height)
+let modelX = CGFloat(bounds.width)/2
+let modelY = CGFloat(bounds.height)/2
