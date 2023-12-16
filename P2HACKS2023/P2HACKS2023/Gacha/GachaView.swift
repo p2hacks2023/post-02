@@ -9,6 +9,7 @@ import SwiftUI
 
 struct GachaView: View {
     @Environment(\.dismiss) private var dismiss
+    @State private var activie = false
     
     var body: some View {
         NavigationStack {
@@ -33,12 +34,16 @@ struct GachaView: View {
                 /* 「招待」ボタン表示 */
                 Button {
                     /* アクションコードここから */
-                    print("button push")
+                    activie.toggle()
                 } /* アクションコードここまで */ label: {
                     Image("invButton")
                     /* リサイズする */
                         .resizable()
                 }
+                .fullScreenCover(isPresented: $activie) {
+                    GachaAnimeView()
+                }
+                .navigationBarBackButtonHidden(true)
                 /* フレームサイズ指定 */
                 .frame(width:toSelectButtonW, height:toSelectButtonH)
                 /* 表示位置の指定 */

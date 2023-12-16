@@ -27,6 +27,13 @@ let rangeH = 272.0
 let rangeX = CGFloat(bounds.width)/2
 let rangeY = CGFloat(bounds.height)/3
 
+/* ガチャ結果のUIパラメータ */
+let gachResultY = CGFloat(bounds.height)/2 + rangeH/3
+let gachResultTextW = CGFloat(bounds.width) - 48
+let gachResultTextH = gachResultTextW/3
+let gachResultTextX = CGFloat(bounds.width)/2
+let gachResultTextY = sceneLaY + 144
+let resultIsSelectButtonY = rangeH + rangeH*1.1
 
 /* ホームの左と右のボタンのパラメータ */
 let toGameButtonW = 150.0
@@ -51,11 +58,10 @@ let toSelectButtonY = CGFloat(bounds.height)/2
 let isSelectButtonX = CGFloat(bounds.width)/2 + CGFloat(bounds.width)/4
 let isSelectButtonY = rangeH + rangeH/4
 
-/* 所持キャラの名前格納配列*/
-let myCharNames = ["raihin", "johin", "syuhin", "kokuhin"]
-
-/* ガチャキャラの名前格納配列*/
-let GachaInCharNames = ["", "", ""]
+///* 所持キャラの名前格納配列*/
+//var inimyCharNames = ["raihin", "johin"]
+///* ガチャキャラの名前格納配列*/
+//var iniGachaInCharNames = ["syuhin", "kokuhin"]
 
 /* イントロのUI表示パラメータ */
 let IntroWandH = CGFloat(bounds.width) - 30.0
