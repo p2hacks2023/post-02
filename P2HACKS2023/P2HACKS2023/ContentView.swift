@@ -10,7 +10,7 @@ import SwiftUI
  ここで各Viewを司るよ
  */
 struct ContentView: View {
-    @ObservedObject var speechManager = SpeechManager()
+
     @State private var pageIndex = 0
     @State private var activie = false
     private let pages: [Page] = Page.samplePages
@@ -64,11 +64,7 @@ struct ContentView: View {
             .navigationDestination(isPresented: $activie, destination: {
                 HomeView()
             })
-            //音声認識を開始するためのボタン
-            Button("Start Recording") {
-                speechManager.startRecording()
-            }
-            .padding()
+
         }
     }
     func incrementPage() {

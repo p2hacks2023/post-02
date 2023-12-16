@@ -9,11 +9,9 @@ import Foundation
 import Speech
 
 class SpeechManager: ObservableObject {
-    
-    //認識した音声をテキスト変換し、格納する変数
     @Published var recognizedText = ""
+    @Published var countdown = 10
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "ja-JP"))
-    //音声認識するためのリクエスト
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     private var recognitionTask: SFSpeechRecognitionTask?
     private let audioEngine = AVAudioEngine()
@@ -39,6 +37,8 @@ class SpeechManager: ObservableObject {
             audioEngine.prepare()
             try audioEngine.start()
 
+            startCountdown()
+
             recognitionTask = speechRecognizer?.recognitionTask(with: recognitionRequest) { result, error in
                 if let result = result {
                     self.recognizedText = result.bestTranscription.formattedString
@@ -47,6 +47,7 @@ class SpeechManager: ObservableObject {
                     print("Recognition Error: \(error)")
                 }
             }
+            
         } catch {
             print("Audio Session Error: \(error)")
         }
@@ -56,6 +57,8 @@ class SpeechManager: ObservableObject {
         audioEngine.stop()
         recognitionRequest?.endAudio()
         recognitionTask?.cancel()
+        resetCountdown()
+        print(recognizedText)
     }
 
     private func requestMicrophonePermission() {
@@ -66,5 +69,20 @@ class SpeechManager: ObservableObject {
                 print("Microphone permission denied")
             }
         }
+    }
+
+    func startCountdown() {
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+            if self.countdown > 0 {
+                self.countdown -= 1
+            } else {
+                timer.invalidate()
+                self.stopRecording()
+            }
+        }
+    }
+
+    private func resetCountdown() {
+        countdown = 10
     }
 }
