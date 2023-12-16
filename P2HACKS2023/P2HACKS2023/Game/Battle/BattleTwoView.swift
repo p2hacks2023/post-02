@@ -15,7 +15,7 @@ struct BattleTwoView: View {
         NavigationStack {
             ZStack {
                 /* 背景追加 */
-                Image("GameBackGround")
+                Image("GameBackGround2")
                 /* リサイズする */
                     .resizable()
                 /* 画面全体表示（セーフエリア外も）*/
