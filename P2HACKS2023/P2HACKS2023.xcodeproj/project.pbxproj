@@ -21,9 +21,9 @@
 		7F8958BE2B283DBB00D75AA2 /* P2HACKS2023Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8958BD2B283DBB00D75AA2 /* P2HACKS2023Tests.swift */; };
 		7F8958C82B283DBB00D75AA2 /* P2HACKS2023UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8958C72B283DBB00D75AA2 /* P2HACKS2023UITests.swift */; };
 		7F8958CA2B283DBB00D75AA2 /* P2HACKS2023UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8958C92B283DBB00D75AA2 /* P2HACKS2023UITestsLaunchTests.swift */; };
-		7FB0CE3B2B2C4D960003A328 /* BattleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE3A2B2C4D960003A328 /* BattleView.swift */; };
-		7FB0CE3C2B2C4D960003A328 /* BattleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE3A2B2C4D960003A328 /* BattleView.swift */; };
-		7FB0CE3D2B2C4D960003A328 /* BattleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE3A2B2C4D960003A328 /* BattleView.swift */; };
+		7FB0CE3B2B2C4D960003A328 /* BattleOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE3A2B2C4D960003A328 /* BattleOneView.swift */; };
+		7FB0CE3C2B2C4D960003A328 /* BattleOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE3A2B2C4D960003A328 /* BattleOneView.swift */; };
+		7FB0CE3D2B2C4D960003A328 /* BattleOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE3A2B2C4D960003A328 /* BattleOneView.swift */; };
 		7FB0CE3F2B2C4DD80003A328 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE3E2B2C4DD80003A328 /* HomeView.swift */; };
 		7FB0CE402B2C4DD80003A328 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE3E2B2C4DD80003A328 /* HomeView.swift */; };
 		7FB0CE412B2C4DD80003A328 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE3E2B2C4DD80003A328 /* HomeView.swift */; };
@@ -60,6 +60,15 @@
 		7FB0CE752B2DD94A0003A328 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE742B2DD94A0003A328 /* IntroView.swift */; };
 		7FB0CE762B2DD94A0003A328 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE742B2DD94A0003A328 /* IntroView.swift */; };
 		7FB0CE772B2DD94A0003A328 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE742B2DD94A0003A328 /* IntroView.swift */; };
+		7FB0CE7D2B2E2AF80003A328 /* BattleTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE7C2B2E2AF80003A328 /* BattleTwoView.swift */; };
+		7FB0CE7E2B2E2AF80003A328 /* BattleTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE7C2B2E2AF80003A328 /* BattleTwoView.swift */; };
+		7FB0CE7F2B2E2AF80003A328 /* BattleTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE7C2B2E2AF80003A328 /* BattleTwoView.swift */; };
+		7FB0CE812B2E2B150003A328 /* BattleThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE802B2E2B150003A328 /* BattleThreeView.swift */; };
+		7FB0CE822B2E2B150003A328 /* BattleThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE802B2E2B150003A328 /* BattleThreeView.swift */; };
+		7FB0CE832B2E2B150003A328 /* BattleThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE802B2E2B150003A328 /* BattleThreeView.swift */; };
+		7FB0CE852B2E2FE20003A328 /* BattleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE842B2E2FE20003A328 /* BattleMainView.swift */; };
+		7FB0CE862B2E2FE20003A328 /* BattleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE842B2E2FE20003A328 /* BattleMainView.swift */; };
+		7FB0CE872B2E2FE20003A328 /* BattleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE842B2E2FE20003A328 /* BattleMainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +102,7 @@
 		7F8958C32B283DBB00D75AA2 /* P2HACKS2023UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P2HACKS2023UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F8958C72B283DBB00D75AA2 /* P2HACKS2023UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2HACKS2023UITests.swift; sourceTree = "<group>"; };
 		7F8958C92B283DBB00D75AA2 /* P2HACKS2023UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2HACKS2023UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		7FB0CE3A2B2C4D960003A328 /* BattleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleView.swift; sourceTree = "<group>"; };
+		7FB0CE3A2B2C4D960003A328 /* BattleOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleOneView.swift; sourceTree = "<group>"; };
 		7FB0CE3E2B2C4DD80003A328 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7FB0CE422B2C4FB10003A328 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		7FB0CE462B2C51D70003A328 /* CharSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharSelectView.swift; sourceTree = "<group>"; };
@@ -104,6 +113,9 @@
 		7FB0CE6B2B2D7E140003A328 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		7FB0CE6F2B2DD7160003A328 /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 		7FB0CE742B2DD94A0003A328 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		7FB0CE7C2B2E2AF80003A328 /* BattleTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleTwoView.swift; sourceTree = "<group>"; };
+		7FB0CE802B2E2B150003A328 /* BattleThreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleThreeView.swift; sourceTree = "<group>"; };
+		7FB0CE842B2E2FE20003A328 /* BattleMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleMainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,7 +272,10 @@
 		7FB0CE6A2B2D7DA40003A328 /* Battle */ = {
 			isa = PBXGroup;
 			children = (
-				7FB0CE3A2B2C4D960003A328 /* BattleView.swift */,
+				7FB0CE3A2B2C4D960003A328 /* BattleOneView.swift */,
+				7FB0CE7C2B2E2AF80003A328 /* BattleTwoView.swift */,
+				7FB0CE802B2E2B150003A328 /* BattleThreeView.swift */,
+				7FB0CE842B2E2FE20003A328 /* BattleMainView.swift */,
 			);
 			path = Battle;
 			sourceTree = "<group>";
@@ -413,14 +428,17 @@
 				7FB0CE612B2D7C8D0003A328 /* AllUsePara.swift in Sources */,
 				7FB0CE552B2D79060003A328 /* GameResultView.swift in Sources */,
 				7FB0CE6C2B2D7E140003A328 /* GameView.swift in Sources */,
+				7FB0CE812B2E2B150003A328 /* BattleThreeView.swift in Sources */,
 				7FB0CE592B2D791B0003A328 /* GachaResultView.swift in Sources */,
 				7FB0CE752B2DD94A0003A328 /* IntroView.swift in Sources */,
 				7FB0CE432B2C4FB10003A328 /* TitleView.swift in Sources */,
 				7FB0CE702B2DD7160003A328 /* PageModel.swift in Sources */,
 				7F8958AD2B283DBA00D75AA2 /* P2HACKS2023App.swift in Sources */,
+				7FB0CE852B2E2FE20003A328 /* BattleMainView.swift in Sources */,
 				42928C3F2B2D8186009C0D96 /* VoiceRecognition.swift in Sources */,
 				7FB0CE472B2C51D70003A328 /* CharSelectView.swift in Sources */,
-				7FB0CE3B2B2C4D960003A328 /* BattleView.swift in Sources */,
+				7FB0CE3B2B2C4D960003A328 /* BattleOneView.swift in Sources */,
+				7FB0CE7D2B2E2AF80003A328 /* BattleTwoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +449,7 @@
 				42928C4D2B2DE0D8009C0D96 /* ShakeDetection.swift in Sources */,
 				7FB0CE442B2C4FB10003A328 /* TitleView.swift in Sources */,
 				7FB0CE622B2D7C8D0003A328 /* AllUsePara.swift in Sources */,
+				7FB0CE7E2B2E2AF80003A328 /* BattleTwoView.swift in Sources */,
 				7FB0CE762B2DD94A0003A328 /* IntroView.swift in Sources */,
 				7FB0CE562B2D79060003A328 /* GameResultView.swift in Sources */,
 				7FB0CE4E2B2D753F0003A328 /* GachaView.swift in Sources */,
@@ -438,12 +457,14 @@
 				7FB0CE482B2C51D70003A328 /* CharSelectView.swift in Sources */,
 				7FB0CE402B2C4DD80003A328 /* HomeView.swift in Sources */,
 				7FB0CE512B2D755B0003A328 /* P2HACKS2023App.swift in Sources */,
+				7FB0CE822B2E2B150003A328 /* BattleThreeView.swift in Sources */,
+				7FB0CE862B2E2FE20003A328 /* BattleMainView.swift in Sources */,
 				7FB0CE712B2DD7160003A328 /* PageModel.swift in Sources */,
 				7F8958BE2B283DBB00D75AA2 /* P2HACKS2023Tests.swift in Sources */,
 				42928C402B2D8186009C0D96 /* VoiceRecognition.swift in Sources */,
 				7FB0CE5A2B2D791B0003A328 /* GachaResultView.swift in Sources */,
 				7FB0CE6D2B2D7E140003A328 /* GameView.swift in Sources */,
-				7FB0CE3C2B2C4D960003A328 /* BattleView.swift in Sources */,
+				7FB0CE3C2B2C4D960003A328 /* BattleOneView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,12 +481,15 @@
 				42928C4E2B2DE0D8009C0D96 /* ShakeDetection.swift in Sources */,
 				7FB0CE452B2C4FB10003A328 /* TitleView.swift in Sources */,
 				7FB0CE572B2D79060003A328 /* GameResultView.swift in Sources */,
+				7FB0CE7F2B2E2AF80003A328 /* BattleTwoView.swift in Sources */,
 				7FB0CE532B2D755F0003A328 /* ContentView.swift in Sources */,
 				7F8958C82B283DBB00D75AA2 /* P2HACKS2023UITests.swift in Sources */,
 				42928C412B2D8186009C0D96 /* VoiceRecognition.swift in Sources */,
+				7FB0CE832B2E2B150003A328 /* BattleThreeView.swift in Sources */,
 				7FB0CE492B2C51D70003A328 /* CharSelectView.swift in Sources */,
+				7FB0CE872B2E2FE20003A328 /* BattleMainView.swift in Sources */,
 				7FB0CE632B2D7C8D0003A328 /* AllUsePara.swift in Sources */,
-				7FB0CE3D2B2C4D960003A328 /* BattleView.swift in Sources */,
+				7FB0CE3D2B2C4D960003A328 /* BattleOneView.swift in Sources */,
 				7FB0CE6E2B2D7E140003A328 /* GameView.swift in Sources */,
 				7FB0CE5B2B2D791B0003A328 /* GachaResultView.swift in Sources */,
 			);
