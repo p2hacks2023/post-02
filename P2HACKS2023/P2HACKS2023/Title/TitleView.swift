@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct TitleView: View {
+    @State private var activie = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            Button {
+                activie.toggle()
+            } /* アクションコードここまで */label: {
+                Text("次へ")
+            }
+            .navigationBarBackButtonHidden(true)
+            .navigationDestination(isPresented: $activie, destination: {
+                ContentView()
+            })
+            
+        }
     }
 }
-
 #Preview {
     TitleView()
 }

@@ -13,7 +13,7 @@ let bounds = UIScreen.main.bounds
 /* シーンラベルのパラメータ */
 let sceneLaWidth = CGFloat(bounds.width)
 let sceneLaHeight = 55.0
-let sceneLaY = 60.0
+let sceneLaY = 104.0
 
 /* キャラセレクトの「戻る」ボタンのパラメータ */
 let returnButtonWidth = 65.0
@@ -56,3 +56,14 @@ let myCharNames = ["raihin", "syuhin", "kokuhin"]
 
 /* ガチャキャラの名前格納配列*/
 let GachaInCharNames = ["", "", ""]
+
+/* イントロのUI表示パラメータ */
+let IntroWandH = CGFloat(bounds.width) - 30.0
+let IntroX = CGFloat(bounds.width)/2
+let IntroY = CGFloat(bounds.height)/2 - 65
+
+let nextButtonW = toSelectButtonW
+let nextButtonH = toSelectButtonH
+let nextButtonX = CGFloat(bounds.width)/2
+let nextButtonY = CGFloat(bounds.height)/2 + 260.0
+

@@ -12,11 +12,12 @@ import SwiftUI
 struct P2HACKS2023App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-//            TitleView()
-//            HomeView()
-//            CharSelectView()
-//            BattleView()
+            TitleView()
+            //            ContentView()
+            //            HomeView()
+            //            CharSelectView()
+            //            GameView()
+            //            BattleView()
         }
     }
 }
