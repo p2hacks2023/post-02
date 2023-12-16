@@ -34,13 +34,16 @@ struct HomeView: View {
                 /* 表示位置の設定 */
                     .position(x: sceneLaWidth/2, y: sceneLaY)
                 /* 「キャラ変更」ボタン表示 */
-                NavigationLink {
+                Button {
                     /* アクションコードここから */
-                    CharSelectView()
+                    activieA.toggle()
                 } /* アクションコードここまで */ label: {
                     Image("toSelectButton")
                     /* リサイズする */
                         .resizable()
+                }
+                .fullScreenCover(isPresented: $activieA) {
+                    CharSelectView()
                 }
                 .navigationBarBackButtonHidden(true)
                 /* フレームサイズ指定 */
@@ -50,16 +53,19 @@ struct HomeView: View {
                 /* キャラクター変更ここまで*/
                 
                 /* ------------------------------------------------------------------ */
-                /* 「式場」ボタンコードここまで */
+                
                 HStack {
-                    /* 「左」ボタン表示 */
-                    NavigationLink{
+                    /* 「式場」ボタンコードここから */
+                    Button{
                         /* アクションコードここから */
-                        GameView()
+                        activieB.toggle()
                     } /* アクションコードここまで */ label: {
                         Image("toGameButton")
                         /* リサイズする */
                             .resizable()
+                    }
+                    .fullScreenCover(isPresented: $activieB) {
+                        GameView()
                     }
                     .navigationBarBackButtonHidden(true)
                     /* フレームサイズ指定 */
@@ -70,13 +76,16 @@ struct HomeView: View {
                     
                     /* ------------------------------------------------------------------ */
                     /* 「招待」ボタン表示 */
-                    NavigationLink {
+                    Button {
                         /* アクションコードここから */
-                        GachaView()
+                        activieC.toggle()
                     } /* アクションコードここまで */ label: {
                         Image("toGachaButton")
                         /* リサイズする */
                             .resizable()
+                    }
+                    .fullScreenCover(isPresented: $activieC) {
+                        GachaView()
                     }
                     .navigationBarBackButtonHidden(true)
                     /* フレームサイズ指定 */

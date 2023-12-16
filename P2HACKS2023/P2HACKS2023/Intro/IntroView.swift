@@ -22,7 +22,7 @@ struct IntroView: View {
                 .aspectRatio(contentMode: .fill)
             
             //「イントロ変更」を表示
-            Image("Intro")
+            Image(page.description)
             /* リサイズする */
                 .resizable()
             /* フレームサイズ指定 */

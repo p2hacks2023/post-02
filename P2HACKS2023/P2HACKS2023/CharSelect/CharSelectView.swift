@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CharSelectView: View {
     @Environment(\.dismiss) private var dismiss
-
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -57,7 +57,7 @@ struct CharSelectView: View {
                     }
                     .padding(.bottom, rangeH)
                 }
-                .padding(.top, 50)
+                .padding(.top, 24)
                 
                 /* スクロール表示ここまで*/
                 //「キャラクター変更」を表示
