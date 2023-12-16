@@ -8,58 +8,61 @@
 import SwiftUI
 
 struct GachaView: View {
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
-        ZStack {
-            /* 背景追加 */
-            Image("background")
-            /* リサイズする */
-                .resizable()
-            /* 画面全体表示（セーフエリア外も）*/
-                .edgesIgnoringSafeArea(.all)
-            /* アスペクト比を維持 */
-                .aspectRatio(contentMode: .fill)
-            //「キャラクター変更」を表示
-            Image("Gacha")
-            /* リサイズする */
-                .resizable()
-            /* フレームサイズ指定 */
-                .frame(width: sceneLaWidth, height: sceneLaHeight)
-            /* 表示位置の設定 */
-                .position(x: sceneLaWidth/2, y: sceneLaY)
-            
-            /* 「招待」ボタン表示 */
-            Button {
-                /* アクションコードここから */
-                print("button push")
-            } /* アクションコードここまで */ label: {
-                Image("invButton")
-                    /* リサイズする */
+        NavigationStack {
+            ZStack {
+                /* 背景追加 */
+                Image("background")
+                /* リサイズする */
                     .resizable()
-            }
-            /* フレームサイズ指定 */
-            .frame(width:toSelectButtonW, height:toSelectButtonH)
-            /* 表示位置の指定 */
-            .position(x:toSelectButtonX, y:toSelectButtonY)
-            /* 招待ボタンここまで*/
-            VStack{
-                /* 「戻る」ボタン表示 */
+                /* 画面全体表示（セーフエリア外も）*/
+                    .edgesIgnoringSafeArea(.all)
+                /* アスペクト比を維持 */
+                    .aspectRatio(contentMode: .fill)
+                //「キャラクター変更」を表示
+                Image("Gacha")
+                /* リサイズする */
+                    .resizable()
+                /* フレームサイズ指定 */
+                    .frame(width: sceneLaWidth, height: sceneLaHeight)
+                /* 表示位置の設定 */
+                    .position(x: sceneLaWidth/2, y: sceneLaY)
+                
+                /* 「招待」ボタン表示 */
                 Button {
                     /* アクションコードここから */
                     print("button push")
                 } /* アクションコードここまで */ label: {
-                    Image("returnButton")
+                    Image("invButton")
                     /* リサイズする */
                         .resizable()
                 }
                 /* フレームサイズ指定 */
-                .frame(width:returnButtonWidth, height:returnButtonHeight)
+                .frame(width:toSelectButtonW, height:toSelectButtonH)
                 /* 表示位置の指定 */
-                .position(x:returnButtonX, y:returnButtonY)
-                /* 「戻る」ボタンコードここまで */
-                
-                
-            } /* VStackここまで */
-        } /* ZStackここまで */
+                .position(x:toSelectButtonX, y:toSelectButtonY)
+                /* 招待ボタンここまで*/
+                VStack{
+                    /* 「戻る」ボタン表示 */
+                    Button {
+                        /* アクションコードここから */
+                        dismiss()
+                    } /* アクションコードここまで */ label: {
+                        Image("returnButton")
+                        /* リサイズする */
+                            .resizable()
+                    }
+                    /* フレームサイズ指定 */
+                    .frame(width:returnButtonWidth, height:returnButtonHeight)
+                    /* 表示位置の指定 */
+                    .position(x:returnButtonX, y:returnButtonY)
+                    /* 「戻る」ボタンコードここまで */
+                } /* VStackここまで */
+            } /* ZStackここまで */
+            .navigationBarBackButtonHidden(true)
+        }
     }
 }
 

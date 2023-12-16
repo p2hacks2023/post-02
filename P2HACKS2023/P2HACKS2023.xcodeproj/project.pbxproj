@@ -51,6 +51,12 @@
 		7FB0CE6C2B2D7E140003A328 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE6B2B2D7E140003A328 /* GameView.swift */; };
 		7FB0CE6D2B2D7E140003A328 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE6B2B2D7E140003A328 /* GameView.swift */; };
 		7FB0CE6E2B2D7E140003A328 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE6B2B2D7E140003A328 /* GameView.swift */; };
+		7FB0CE702B2DD7160003A328 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE6F2B2DD7160003A328 /* PageModel.swift */; };
+		7FB0CE712B2DD7160003A328 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE6F2B2DD7160003A328 /* PageModel.swift */; };
+		7FB0CE722B2DD7160003A328 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE6F2B2DD7160003A328 /* PageModel.swift */; };
+		7FB0CE752B2DD94A0003A328 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE742B2DD94A0003A328 /* IntroView.swift */; };
+		7FB0CE762B2DD94A0003A328 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE742B2DD94A0003A328 /* IntroView.swift */; };
+		7FB0CE772B2DD94A0003A328 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0CE742B2DD94A0003A328 /* IntroView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +98,8 @@
 		7FB0CE582B2D791B0003A328 /* GachaResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GachaResultView.swift; sourceTree = "<group>"; };
 		7FB0CE602B2D7C8D0003A328 /* AllUsePara.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUsePara.swift; sourceTree = "<group>"; };
 		7FB0CE6B2B2D7E140003A328 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		7FB0CE6F2B2DD7160003A328 /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		7FB0CE742B2DD94A0003A328 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +165,7 @@
 				42928C3E2B2D8186009C0D96 /* VoiceRecognition.swift */,
 				7FB0CE692B2D7D6C0003A328 /* Parameters */,
 				7FB0CE662B2D7D3E0003A328 /* Title */,
+				7FB0CE732B2DD72E0003A328 /* Intro */,
 				7FB0CE642B2D7D220003A328 /* Home */,
 				7FB0CE652B2D7D2C0003A328 /* Game */,
 				7FB0CE682B2D7D540003A328 /* CharSelect */,
@@ -249,6 +258,15 @@
 				7FB0CE3A2B2C4D960003A328 /* BattleView.swift */,
 			);
 			path = Battle;
+			sourceTree = "<group>";
+		};
+		7FB0CE732B2DD72E0003A328 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				7FB0CE6F2B2DD7160003A328 /* PageModel.swift */,
+				7FB0CE742B2DD94A0003A328 /* IntroView.swift */,
+			);
+			path = Intro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,7 +408,9 @@
 				7FB0CE552B2D79060003A328 /* GameResultView.swift in Sources */,
 				7FB0CE6C2B2D7E140003A328 /* GameView.swift in Sources */,
 				7FB0CE592B2D791B0003A328 /* GachaResultView.swift in Sources */,
+				7FB0CE752B2DD94A0003A328 /* IntroView.swift in Sources */,
 				7FB0CE432B2C4FB10003A328 /* TitleView.swift in Sources */,
+				7FB0CE702B2DD7160003A328 /* PageModel.swift in Sources */,
 				7F8958AD2B283DBA00D75AA2 /* P2HACKS2023App.swift in Sources */,
 				42928C3F2B2D8186009C0D96 /* VoiceRecognition.swift in Sources */,
 				7FB0CE472B2C51D70003A328 /* CharSelectView.swift in Sources */,
@@ -404,17 +424,18 @@
 			files = (
 				7FB0CE442B2C4FB10003A328 /* TitleView.swift in Sources */,
 				7FB0CE622B2D7C8D0003A328 /* AllUsePara.swift in Sources */,
+				7FB0CE762B2DD94A0003A328 /* IntroView.swift in Sources */,
 				7FB0CE562B2D79060003A328 /* GameResultView.swift in Sources */,
 				7FB0CE4E2B2D753F0003A328 /* GachaView.swift in Sources */,
 				7FB0CE522B2D755E0003A328 /* ContentView.swift in Sources */,
 				7FB0CE482B2C51D70003A328 /* CharSelectView.swift in Sources */,
 				7FB0CE402B2C4DD80003A328 /* HomeView.swift in Sources */,
 				7FB0CE512B2D755B0003A328 /* P2HACKS2023App.swift in Sources */,
+				7FB0CE712B2DD7160003A328 /* PageModel.swift in Sources */,
 				7F8958BE2B283DBB00D75AA2 /* P2HACKS2023Tests.swift in Sources */,
 				42928C402B2D8186009C0D96 /* VoiceRecognition.swift in Sources */,
 				7FB0CE5A2B2D791B0003A328 /* GachaResultView.swift in Sources */,
 				7FB0CE6D2B2D7E140003A328 /* GameView.swift in Sources */,
-
 				7FB0CE3C2B2C4D960003A328 /* BattleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +445,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F8958CA2B283DBB00D75AA2 /* P2HACKS2023UITestsLaunchTests.swift in Sources */,
+				7FB0CE772B2DD94A0003A328 /* IntroView.swift in Sources */,
+				7FB0CE722B2DD7160003A328 /* PageModel.swift in Sources */,
 				7FB0CE4F2B2D753F0003A328 /* GachaView.swift in Sources */,
 				7FB0CE412B2C4DD80003A328 /* HomeView.swift in Sources */,
 				7FB0CE502B2D755B0003A328 /* P2HACKS2023App.swift in Sources */,
