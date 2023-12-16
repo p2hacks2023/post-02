@@ -14,7 +14,7 @@ struct P2HACKS2023App: App {
         WindowGroup {
             ContentView()
 //            TitleView()
-            HomeView()
+//            HomeView()
 //            CharSelectView()
 //            BattleView()
         }
