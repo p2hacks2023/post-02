@@ -299,7 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F8958AF2B283DBA00D75AA2 /* ContentView.swift in Sources */,
-				42F0C1D32B2CB24900F8EDEA /* VoiceRecognition.swift in Sources */,
+				42D0D4212B2B64FB008DAC32 /* VoiceRecognition.swift in Sources */,
 				7FB0CE3F2B2C4DD80003A328 /* HomeView.swift in Sources */,
 				7FB0CE432B2C4FB10003A328 /* TitleView.swift in Sources */,
 				7F8958AD2B283DBA00D75AA2 /* P2HACKS2023App.swift in Sources */,
