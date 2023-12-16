@@ -8,10 +8,22 @@
 
 import SwiftUI
 
-
+/*
+ ここで各Viewを司るよ
+ */
 struct ContentView: View {
     var body: some View {
-        AudioRecognizedView()
+        ZStack {
+            /* 背景追加 */
+            Image("background")
+            /* リサイズする */
+                .resizable()
+            /* 画面全体表示（セーフエリア外も）*/
+                .edgesIgnoringSafeArea(.all)
+            /* アスペクト比を維持 */
+                .aspectRatio(contentMode: .fill)
+        } /* Zstackここまで */
+
     }
 }
 
