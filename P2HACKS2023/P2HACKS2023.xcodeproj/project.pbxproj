@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42D0D4222B2B64FB008DAC32 /* VoiceRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D0D4212B2B64FB008DAC32 /* VoiceRecognition.swift */; };
+		42F0C1D52B2CB24900F8EDEA /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F0C1D42B2CB24900F8EDEA /* Speech.framework */; };
 		7F8958AD2B283DBA00D75AA2 /* P2HACKS2023App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8958AC2B283DBA00D75AA2 /* P2HACKS2023App.swift */; };
 		7F8958AF2B283DBA00D75AA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8958AE2B283DBA00D75AA2 /* ContentView.swift */; };
 		7F8958B12B283DBB00D75AA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F8958B02B283DBB00D75AA2 /* Assets.xcassets */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42D0D4202B2B645D008DAC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		42D0D4212B2B64FB008DAC32 /* VoiceRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecognition.swift; sourceTree = "<group>"; };
+		42F0C1D42B2CB24900F8EDEA /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
 		7F8958A92B283DBA00D75AA2 /* P2HACKS2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P2HACKS2023.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F8958AC2B283DBA00D75AA2 /* P2HACKS2023App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2HACKS2023App.swift; sourceTree = "<group>"; };
 		7F8958AE2B283DBA00D75AA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42F0C1D52B2CB24900F8EDEA /* Speech.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42F0C1D32B2CB24900F8EDEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42F0C1D42B2CB24900F8EDEA /* Speech.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7F8958A02B283DBA00D75AA2 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +92,7 @@
 				7F8958BC2B283DBB00D75AA2 /* P2HACKS2023Tests */,
 				7F8958C62B283DBB00D75AA2 /* P2HACKS2023UITests */,
 				7F8958AA2B283DBA00D75AA2 /* Products */,
+				42F0C1D32B2CB24900F8EDEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +109,10 @@
 		7F8958AB2B283DBA00D75AA2 /* P2HACKS2023 */ = {
 			isa = PBXGroup;
 			children = (
+				42D0D4202B2B645D008DAC32 /* Info.plist */,
 				7F8958AC2B283DBA00D75AA2 /* P2HACKS2023App.swift */,
 				7F8958AE2B283DBA00D75AA2 /* ContentView.swift */,
+				42D0D4212B2B64FB008DAC32 /* VoiceRecognition.swift */,
 				7F8958B02B283DBB00D75AA2 /* Assets.xcassets */,
 				7F8958B22B283DBB00D75AA2 /* Preview Content */,
 			);
@@ -258,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F8958AF2B283DBA00D75AA2 /* ContentView.swift in Sources */,
+				42D0D4222B2B64FB008DAC32 /* VoiceRecognition.swift in Sources */,
 				7F8958AD2B283DBA00D75AA2 /* P2HACKS2023App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +422,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -422,13 +440,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"P2HACKS2023/Preview Content\"";
+				DEVELOPMENT_TEAM = NL67KBGNQ4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = P2HACKS2023/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Using Mike";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Use audio data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,13 +473,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"P2HACKS2023/Preview Content\"";
+				DEVELOPMENT_TEAM = NL67KBGNQ4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = P2HACKS2023/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Using Mike";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Use audio data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
