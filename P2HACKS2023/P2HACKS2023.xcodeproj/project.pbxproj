@@ -154,10 +154,6 @@
 			children = (
 				7F8958AC2B283DBA00D75AA2 /* P2HACKS2023App.swift */,
 				7F8958AE2B283DBA00D75AA2 /* ContentView.swift */,
-				7FB0CE422B2C4FB10003A328 /* TitleView.swift */,
-				7FB0CE3E2B2C4DD80003A328 /* HomeView.swift */,
-				7FB0CE462B2C51D70003A328 /* CharSelectView.swift */,
-				7FB0CE3A2B2C4D960003A328 /* BattleView.swift */,
 				42928C3E2B2D8186009C0D96 /* VoiceRecognition.swift */,
 				7FB0CE692B2D7D6C0003A328 /* Parameters */,
 				7FB0CE662B2D7D3E0003A328 /* Title */,
