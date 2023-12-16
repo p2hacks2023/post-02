@@ -11,6 +11,10 @@ struct HomeView: View {
     @State private var activieA = false
     @State private var activieB = false
     @State private var activieC = false
+    /* 所持キャラの名前格納配列*/
+    @Binding var inimyCharNames: [String]
+    /* ガチャキャラの名前格納配列*/
+    @Binding var iniGachaInCharNames: [String]
     
     var body: some View {
         NavigationStack {
@@ -43,7 +47,7 @@ struct HomeView: View {
                         .resizable()
                 }
                 .fullScreenCover(isPresented: $activieA) {
-                    CharSelectView()
+                    CharSelectView(myCharNames: $inimyCharNames, GachaInCharNames: $iniGachaInCharNames)
                 }
                 .navigationBarBackButtonHidden(true)
                 /* フレームサイズ指定 */
@@ -100,6 +104,7 @@ struct HomeView: View {
         }
     }
 }
-#Preview {
-    HomeView()
-}
+
+//#Preview {
+//    HomeView()
+//}

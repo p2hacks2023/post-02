@@ -15,6 +15,10 @@ struct ContentView: View {
     @State private var activie = false
     private let pages: [Page] = Page.samplePages
     private let dotAppearance = UIPageControl.appearance()
+    /* 所持キャラの名前格納配列*/
+    @State var inimyCharNames = ["raihin", "johin"]
+    /* ガチャキャラの名前格納配列*/
+    @State var iniGachaInCharNames = ["syuhin", "kokuhin"]
     
     var body: some View {
 
@@ -62,7 +66,7 @@ struct ContentView: View {
             } /* Zstackここまで */
             .navigationBarBackButtonHidden(true)
             .navigationDestination(isPresented: $activie, destination: {
-                HomeView()
+                HomeView(inimyCharNames: $inimyCharNames, iniGachaInCharNames: $iniGachaInCharNames)
             })
 
         }

@@ -20,7 +20,6 @@ struct IntroView: View {
                 .edgesIgnoringSafeArea(.all)
             /* アスペクト比を維持 */
                 .aspectRatio(contentMode: .fill)
-            
             //「イントロ変更」を表示
             Image(page.description)
             /* リサイズする */

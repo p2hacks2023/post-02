@@ -9,6 +9,9 @@ import SwiftUI
 
 struct CharSelectView: View {
     @Environment(\.dismiss) private var dismiss
+    /* 所持キャラの名前格納配列*/
+    @Binding var myCharNames: [String]
+    @Binding var GachaInCharNames: [String]
     
     var body: some View {
         NavigationStack {
@@ -35,13 +38,13 @@ struct CharSelectView: View {
                                     .frame(width: rangeW, height: rangeH, alignment: .bottom)
                                     .position(x: rangeX, y: rangeY)
                                 Button { /* アクションコードここから */
-                                    if(name == GachaInCharNames[0]){
+                                    if(name == myCharNames[0]){
                                         print(name)
                                     }
-                                    if(name == GachaInCharNames[1]){
+                                    if(name == myCharNames[1]){
                                         print(name)
                                     }
-                                    if(name == GachaInCharNames[2]){
+                                    if(name == myCharNames[2]){
                                         print(name)
                                     }
                                 } /* アクションコードここまで */ label: {
@@ -92,6 +95,6 @@ struct CharSelectView: View {
     }
 }
 
-#Preview {
-    CharSelectView()
-}
+//#Preview {
+//    CharSelectView(myCharNames: <#Binding<[String]>#>, GachaInCharNames: <#T##Binding<[String]>#>)
+//}
