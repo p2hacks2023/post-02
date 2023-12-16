@@ -22,13 +22,15 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
             /* アスペクト比を維持 */
                 .aspectRatio(contentMode: .fill)
+            //音声認識を開始するためのボタン
+//            Button("Start Recording") {
+//                           speechManager.startRecording()
+//                       }
+//                       .padding()
+            //スマホの揺れを計測するトリガーとしてボタンが欲しかったから便宜上作ったView
+            ShakeDetectionView()
         } /* Zstackここまで */
         
-        //音声認識を開始するためのボタン
-        Button("Start Recording") {
-                       speechManager.startRecording()
-                   }
-                   .padding()
     }
 }
 
