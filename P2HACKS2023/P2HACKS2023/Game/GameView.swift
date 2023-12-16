@@ -9,6 +9,7 @@ import SwiftUI
 
 struct GameView: View {
     @Environment(\.dismiss) private var dismiss
+    @State private var activie = false
     
     var body: some View {
         NavigationStack {
@@ -33,7 +34,7 @@ struct GameView: View {
                 /* 「挨拶」ボタン表示 */
                 Button {
                     /* アクションコードここから */
-                    print("button push")
+                    activie.toggle()
                 } /* アクションコードここまで */ label: {
                     Image("strGameButton")
                     /* リサイズする */
@@ -64,6 +65,9 @@ struct GameView: View {
                 } /* VStackここまで */
             } /* ZStackここまで */
             .navigationBarBackButtonHidden(true)
+            .navigationDestination(isPresented: $activie, destination: {
+                BattleOneView()
+            })
         }
     }
 }

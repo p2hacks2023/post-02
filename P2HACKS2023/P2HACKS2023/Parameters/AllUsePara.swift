@@ -22,8 +22,8 @@ let returnButtonX = returnButtonWidth
 let returnButtonY = CGFloat(bounds.height) - returnButtonWidth*1.5
 
 /* キャラ選択画面の1キャラUIのパラメータ */
-let rangeW = CGFloat(bounds.width) - 40
-let rangeH = 300.0
+let rangeW = CGFloat(bounds.width) - 80
+let rangeH = 272.0
 let rangeX = CGFloat(bounds.width)/2
 let rangeY = CGFloat(bounds.height)/3
 
@@ -52,7 +52,7 @@ let isSelectButtonX = CGFloat(bounds.width)/2 + CGFloat(bounds.width)/4
 let isSelectButtonY = rangeH + rangeH/4
 
 /* 所持キャラの名前格納配列*/
-let myCharNames = ["raihin", "syuhin", "kokuhin"]
+let myCharNames = ["raihin", "johin", "syuhin", "kokuhin"]
 
 /* ガチャキャラの名前格納配列*/
 let GachaInCharNames = ["", "", ""]
@@ -66,4 +66,9 @@ let nextButtonW = toSelectButtonW
 let nextButtonH = toSelectButtonH
 let nextButtonX = CGFloat(bounds.width)/2
 let nextButtonY = CGFloat(bounds.height)/2 + 260.0
+
+/* バトルカウントのパラメータ */
+let BattleTextWH = 170.0
+let BattleTextX = CGFloat(bounds.width)/2
+let BattleTextY = CGFloat(bounds.height)/2
 
