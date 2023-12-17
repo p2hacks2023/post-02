@@ -42,6 +42,10 @@ struct BattleMainView: View {
                     }
                 
                 Text("\(speechManager.countdown)")
+                    .font(.system(size: 105.0))
+                    .foregroundColor(Color.white)
+                    .bold()
+                    .position(x:toSelectButtonX, y: toSelectButtonY - 320)
             }
             .navigationBarBackButtonHidden(true)
             // NavigationLink を使用して BattleShakeView に移動

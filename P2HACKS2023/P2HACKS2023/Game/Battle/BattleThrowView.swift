@@ -23,11 +23,25 @@ struct BattleThrowView: View {
                     .edgesIgnoringSafeArea(.all)
                 /* アスペクト比を維持 */
                     .aspectRatio(contentMode: .fill)
+                Image("spear")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: spearW, height: spearH)
+                    .position(x: toSelectButtonX, y: toSelectButtonY)
+                Image("nagero")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: gachResultTextW, height: gachResultTextH, alignment: .bottom)
+                    .position(x: gachResultTextX, y: gachResultTextY)
                 Button {
                     /* アクションコードここから */
                     chkBool.toggle()
                 } /* アクションコードここまで */ label: {
-                    Text("投槍")
+                    Image("AppStrButton")
+                        .resizable()
+                        .frame(width: toSelectButtonW, height: toSelectButtonH)
+                        .position(x: toSelectButtonX, y:screenH/2+screenH/3)
+                        
                 }
                 .onAppear() {
                    finalScore2 = finalScore1
