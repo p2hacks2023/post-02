@@ -12,6 +12,7 @@ let bounds = UIScreen.main.bounds
 
 /* シーンラベルのパラメータ */
 let sceneLaWidth = CGFloat(bounds.width)
+let screenH = CGFloat(bounds.height)
 let sceneLaHeight = 55.0
 let sceneLaY = 104.0
 
@@ -83,3 +84,11 @@ let modelW = CGFloat(bounds.width)
 let modelH = CGFloat(bounds.height)
 let modelX = CGFloat(bounds.width)/2
 let modelY = CGFloat(bounds.height)/2
+
+/* タイトルの「開始」ボタン */
+let strButtonY = CGFloat(bounds.height) - toSelectButtonH*2
+
+/* gachaTopパラメータ */
+let gachaTopW = 256.0
+let gachaTopH = 336.0
+
