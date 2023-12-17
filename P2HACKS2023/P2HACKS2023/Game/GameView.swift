@@ -9,10 +9,6 @@ import SwiftUI
 
 struct GameView: View {
     @Environment(\.dismiss) private var dismiss
-    //音声認識するクラスのインスタンス生成
-    @ObservedObject var speechManager = SpeechManager()
-    //スマホの揺れを検知するクラスのインスタンス生成
-    @StateObject private var shakeDetection = ShakeDetection()
     @State private var activie = false
     
     var body: some View {

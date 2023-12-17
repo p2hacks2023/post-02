@@ -8,23 +8,48 @@
 import SwiftUI
 
 struct BattleMainView: View {
+    @State private var chkBool = false
+    @State private var count = 0
+    //textScoreの値をGameResultViewまで渡す
+    @State var textScore1:Int = 0
+    @Environment(\.dismiss) private var dismiss
+    @ObservedObject var speechManager = SpeechManager()
+    
     var body: some View {
         NavigationStack {
             ZStack {
-                /* 背景追加 */
                 Image("GameBackGround2")
-                /* リサイズする */
                     .resizable()
-                /* 画面全体表示（セーフエリア外も）*/
                     .edgesIgnoringSafeArea(.all)
-                /* アスペクト比を維持 */
                     .aspectRatio(contentMode: .fill)
+                    .onAppear() {
+                        speechManager.startRecording()
+                        
+                        count = speechManager.countdown
+                        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+                            self.count -= 1
+                            //処理スピードの問題なのかcount==0にするとtextScore1の値が、きちんと計算される前（0）の値を返してくる。　
+                            if self.count == -1 {
+                                /* speechManager.countdown秒後 */
+                                chkBool.toggle()
+                                timer.invalidate()
+                                textScore1 = speechManager.textScore
+                                print(textScore1)
+                                print(textScore1)
+                                print(speechManager.textScore)
+                            }
+                        }
+                    }
+                
+                Text("\(speechManager.countdown)")
             }
+            .navigationBarBackButtonHidden(true)
+            // NavigationLink を使用して BattleShakeView に移動
+            .navigationDestination(isPresented: $chkBool, destination: {
+                BattleShakeView(textScore1: $textScore1)
+            })
         }
-        .navigationBarBackButtonHidden(true)
     }
 }
 
-#Preview {
-    BattleMainView()
-}
+

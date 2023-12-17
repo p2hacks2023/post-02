@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		423ACCA42B2E5BAD00C75789 /* BattleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423ACCA32B2E5BAD00C75789 /* BattleAnimationView.swift */; };
+		423ACCA52B2E5BAD00C75789 /* BattleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423ACCA32B2E5BAD00C75789 /* BattleAnimationView.swift */; };
+		423ACCA62B2E5BAD00C75789 /* BattleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423ACCA32B2E5BAD00C75789 /* BattleAnimationView.swift */; };
+		423ACCA72B2E5BE700C75789 /* BattleThrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42928C572B2E5965009C0D96 /* BattleThrowView.swift */; };
+		423ACCA82B2E5BE700C75789 /* BattleThrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42928C572B2E5965009C0D96 /* BattleThrowView.swift */; };
+		423ACCA92B2E5BED00C75789 /* BattleShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42928C552B2E4CB1009C0D96 /* BattleShakeView.swift */; };
+		423ACCAA2B2E5BEE00C75789 /* BattleShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42928C552B2E4CB1009C0D96 /* BattleShakeView.swift */; };
 		42928C3F2B2D8186009C0D96 /* VoiceRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42928C3E2B2D8186009C0D96 /* VoiceRecognition.swift */; };
 		42928C402B2D8186009C0D96 /* VoiceRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42928C3E2B2D8186009C0D96 /* VoiceRecognition.swift */; };
 		42928C412B2D8186009C0D96 /* VoiceRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42928C3E2B2D8186009C0D96 /* VoiceRecognition.swift */; };
@@ -17,6 +24,8 @@
 		42928C522B2E22AE009C0D96 /* ScoreCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42928C512B2E22AE009C0D96 /* ScoreCalculation.swift */; };
 		42928C532B2E22AE009C0D96 /* ScoreCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42928C512B2E22AE009C0D96 /* ScoreCalculation.swift */; };
 		42928C542B2E22AE009C0D96 /* ScoreCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42928C512B2E22AE009C0D96 /* ScoreCalculation.swift */; };
+		42928C562B2E4CB1009C0D96 /* BattleShakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42928C552B2E4CB1009C0D96 /* BattleShakeView.swift */; };
+		42928C582B2E5965009C0D96 /* BattleThrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42928C572B2E5965009C0D96 /* BattleThrowView.swift */; };
 		7F8958AD2B283DBA00D75AA2 /* P2HACKS2023App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8958AC2B283DBA00D75AA2 /* P2HACKS2023App.swift */; };
 		7F8958AF2B283DBA00D75AA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8958AE2B283DBA00D75AA2 /* ContentView.swift */; };
 		7F8958B12B283DBB00D75AA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F8958B02B283DBB00D75AA2 /* Assets.xcassets */; };
@@ -92,10 +101,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		423ACCA32B2E5BAD00C75789 /* BattleAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleAnimationView.swift; sourceTree = "<group>"; };
 		42928C3E2B2D8186009C0D96 /* VoiceRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecognition.swift; sourceTree = "<group>"; };
 		42928C432B2D8254009C0D96 /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
 		42928C4B2B2DE0D8009C0D96 /* ShakeDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeDetection.swift; sourceTree = "<group>"; };
 		42928C512B2E22AE009C0D96 /* ScoreCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCalculation.swift; sourceTree = "<group>"; };
+		42928C552B2E4CB1009C0D96 /* BattleShakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleShakeView.swift; sourceTree = "<group>"; };
+		42928C572B2E5965009C0D96 /* BattleThrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleThrowView.swift; sourceTree = "<group>"; };
 		7F8958A92B283DBA00D75AA2 /* P2HACKS2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P2HACKS2023.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F8958AC2B283DBA00D75AA2 /* P2HACKS2023App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2HACKS2023App.swift; sourceTree = "<group>"; };
 		7F8958AE2B283DBA00D75AA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -281,6 +293,9 @@
 				7FB0CE7C2B2E2AF80003A328 /* BattleTwoView.swift */,
 				7FB0CE802B2E2B150003A328 /* BattleThreeView.swift */,
 				7FB0CE842B2E2FE20003A328 /* BattleMainView.swift */,
+				42928C552B2E4CB1009C0D96 /* BattleShakeView.swift */,
+				42928C572B2E5965009C0D96 /* BattleThrowView.swift */,
+				423ACCA32B2E5BAD00C75789 /* BattleAnimationView.swift */,
 			);
 			path = Battle;
 			sourceTree = "<group>";
@@ -435,14 +450,17 @@
 				7FB0CE6C2B2D7E140003A328 /* GameView.swift in Sources */,
 				7FB0CE812B2E2B150003A328 /* BattleThreeView.swift in Sources */,
 				7FB0CE592B2D791B0003A328 /* GachaResultView.swift in Sources */,
+				42928C582B2E5965009C0D96 /* BattleThrowView.swift in Sources */,
 				7FB0CE752B2DD94A0003A328 /* IntroView.swift in Sources */,
 				7FB0CE432B2C4FB10003A328 /* TitleView.swift in Sources */,
+				42928C562B2E4CB1009C0D96 /* BattleShakeView.swift in Sources */,
 				7FB0CE702B2DD7160003A328 /* PageModel.swift in Sources */,
 				7F8958AD2B283DBA00D75AA2 /* P2HACKS2023App.swift in Sources */,
 				42928C522B2E22AE009C0D96 /* ScoreCalculation.swift in Sources */,
 				7FB0CE852B2E2FE20003A328 /* BattleMainView.swift in Sources */,
 				42928C3F2B2D8186009C0D96 /* VoiceRecognition.swift in Sources */,
 				7FB0CE472B2C51D70003A328 /* CharSelectView.swift in Sources */,
+				423ACCA42B2E5BAD00C75789 /* BattleAnimationView.swift in Sources */,
 				7FB0CE3B2B2C4D960003A328 /* BattleOneView.swift in Sources */,
 				7FB0CE7D2B2E2AF80003A328 /* BattleTwoView.swift in Sources */,
 			);
@@ -452,12 +470,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				423ACCA52B2E5BAD00C75789 /* BattleAnimationView.swift in Sources */,
 				42928C4D2B2DE0D8009C0D96 /* ShakeDetection.swift in Sources */,
 				7FB0CE442B2C4FB10003A328 /* TitleView.swift in Sources */,
 				7FB0CE622B2D7C8D0003A328 /* AllUsePara.swift in Sources */,
 				7FB0CE7E2B2E2AF80003A328 /* BattleTwoView.swift in Sources */,
+				423ACCA92B2E5BED00C75789 /* BattleShakeView.swift in Sources */,
 				7FB0CE762B2DD94A0003A328 /* IntroView.swift in Sources */,
 				7FB0CE562B2D79060003A328 /* GameResultView.swift in Sources */,
+				423ACCA72B2E5BE700C75789 /* BattleThrowView.swift in Sources */,
 				7FB0CE4E2B2D753F0003A328 /* GachaView.swift in Sources */,
 				7FB0CE522B2D755E0003A328 /* ContentView.swift in Sources */,
 				7FB0CE482B2C51D70003A328 /* CharSelectView.swift in Sources */,
@@ -490,6 +511,8 @@
 				42928C542B2E22AE009C0D96 /* ScoreCalculation.swift in Sources */,
 				7FB0CE572B2D79060003A328 /* GameResultView.swift in Sources */,
 				7FB0CE7F2B2E2AF80003A328 /* BattleTwoView.swift in Sources */,
+				423ACCAA2B2E5BEE00C75789 /* BattleShakeView.swift in Sources */,
+				423ACCA82B2E5BE700C75789 /* BattleThrowView.swift in Sources */,
 				7FB0CE532B2D755F0003A328 /* ContentView.swift in Sources */,
 				7F8958C82B283DBB00D75AA2 /* P2HACKS2023UITests.swift in Sources */,
 				42928C412B2D8186009C0D96 /* VoiceRecognition.swift in Sources */,
@@ -498,6 +521,7 @@
 				7FB0CE872B2E2FE20003A328 /* BattleMainView.swift in Sources */,
 				7FB0CE632B2D7C8D0003A328 /* AllUsePara.swift in Sources */,
 				7FB0CE3D2B2C4D960003A328 /* BattleOneView.swift in Sources */,
+				423ACCA62B2E5BAD00C75789 /* BattleAnimationView.swift in Sources */,
 				7FB0CE6E2B2D7E140003A328 /* GameView.swift in Sources */,
 				7FB0CE5B2B2D791B0003A328 /* GachaResultView.swift in Sources */,
 			);

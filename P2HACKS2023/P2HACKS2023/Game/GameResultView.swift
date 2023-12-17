@@ -8,11 +8,9 @@
 import SwiftUI
 
 struct GameResultView: View {
+    @Binding var finalScore3: Int
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("倒したゲヒーン数：\(finalScore3)")
     }
-}
-
-#Preview {
-    GameResultView()
 }

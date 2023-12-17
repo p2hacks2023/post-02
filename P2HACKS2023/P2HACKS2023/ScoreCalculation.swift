@@ -7,10 +7,11 @@
 
 import Foundation
 
+//ゲヒーンを軟体倒せるかの計算をする
 func ScoreCalculation (textScore ts:Int, shakeScore ss:Int) -> Int{
     var finalScore:Int = 0
     
-    // 文字列の一致度を計算
+    //2つの数値を掛け算
     finalScore = ts * ss
 
     return finalScore
