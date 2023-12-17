@@ -22,6 +22,16 @@
 ”ひんやり”＝”冷たい”という固定概念にとらわれず”ひん”と”やり”に分解して発想した点、3Dモデルを使用し、独特の世界観を作り上げた点、音声認識や加速度センサを使用することで現実世界とのインタラクション要素を持たせた点  
 
 ### スクリーンショット(任意)  
+![title](https://github.com/p2hacks2023/post-02/assets/95331511/a4c6cd43-973c-4ab5-96dd-cbacafedb20f)  
+![Home](https://github.com/p2hacks2023/post-02/assets/95331511/87127725-ecd5-45a1-839f-a4333d5d4b5b)  
+![Battle_aisatu](https://github.com/p2hacks2023/post-02/assets/95331511/fb5f897c-11a3-487e-8380-c5e1c1208abd)  
+![Battle_shake](https://github.com/p2hacks2023/post-02/assets/95331511/5eb5fdb9-5a51-4dd9-b3b4-8f37f5cce426)  
+![Gatya_result](https://github.com/p2hacks2023/post-02/assets/95331511/0b257d67-fd93-41a7-96f2-c476e33149f9)  
+
+
+
+
+
 
 ## 開発体制  
 
