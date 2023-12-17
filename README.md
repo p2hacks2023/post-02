@@ -1,6 +1,6 @@
 # P2HACKS2023 アピールシート 
 ### プロダクト名  
-礼儀をわきまえないクレーマー客”ゲヒーン”がはびこる世の中。  
+来賓武槍
 
 
 ### コンセプト  
@@ -19,7 +19,7 @@
 ガチャでより強い”ライヒーン”たちに出会え！  
 
 ### 推しポイント  
-未定  
+”ひんやり”＝”冷たい”という固定概念にとらわれず”ひん”と”やり”に分解して発想した点、3Dモデルを使用し、独特の世界観を作り上げた点、音声認識や加速度センサを使用することで現実世界とのインタラクション要素を持たせた点  
 
 ### スクリーンショット(任意)  
 
@@ -34,15 +34,25 @@
   
 
 ### 開発における工夫した点  
-未定  
+githubの有効活用とスケジューリング共有、開発を意識したUI/UXデザイン  
 
 ## 開発技術 
 
+
 ### 利用したプログラミング言語  
-未定  
+SwiftUI  
 
 ### 利用したフレームワーク・ライブラリ  
-未定  
+Xcode  
+SceneKit  
+AVKit  
+Speech  
+
 
 ### その他開発に使用したツール・サービス
-未定  
+Blender  
+Figma https://www.figma.com/file/21MAEle3WWnxNIL5xMbVmD/P2HACKS-(1)?type=design&node-id=25-727&mode=design&t=EJkigM166OSPENaU-0  
+miro https://miro.com/app/board/uXjVNErTpXk=/?share_link_id=67645678121  
+Stable Diffusion  
+Aviutl  
+Adbe illustrater
