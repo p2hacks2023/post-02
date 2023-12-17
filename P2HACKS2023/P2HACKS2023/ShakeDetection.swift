@@ -8,9 +8,11 @@
 import SwiftUI
 import CoreMotion
 
-class ShakeDetectionViewModel: ObservableObject {
+class ShakeDetection: ObservableObject {
+    //何回振れたかをカウント
     @Published var shakeCount = 0
-    @Published var countdownSeconds = 5
+    //振れる残り時間
+    @Published var countdownSeconds = 7
 
     private var motionManager: CMMotionManager
     private var timer: Timer?
@@ -20,9 +22,12 @@ class ShakeDetectionViewModel: ObservableObject {
     }
 
     func startMeasurement() {
+        //一旦カウントをリセット
         resetCountdown()
+        //振ったかどうかを検出
         startMotionDetection()
 
+        //タイマー機能
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
             guard let self = self else { return }
 
@@ -34,11 +39,14 @@ class ShakeDetectionViewModel: ObservableObject {
     }
 
     func stopMeasurement() {
+        //振ったかどうかの検出を止める
         stopMotionDetection()
         timer?.invalidate()
         resetCountdown()
+        print("最終振りカウント: \(shakeCount)")
     }
 
+    //加速度を取得し、条件を満たせばスマホを振ったと認識する
     private func startMotionDetection() {
         if motionManager.isDeviceMotionAvailable {
             motionManager.deviceMotionUpdateInterval = 0.1
@@ -49,6 +57,7 @@ class ShakeDetectionViewModel: ObservableObject {
                     if abs(acceleration.x) > shakeThreshold ||
                        abs(acceleration.y) > shakeThreshold ||
                        abs(acceleration.z) > shakeThreshold {
+                        //振った回数をカウントしていく
                         self?.shakeCount += 1
                         print("Shake detected! Count: \(self?.shakeCount ?? 0)")
                     }
@@ -64,13 +73,14 @@ class ShakeDetectionViewModel: ObservableObject {
     private func resetCountdown() {
         countdownSeconds = 5
     }
+    
 }
 
 
 //スマホの揺れを計測するトリガーとしてボタンが欲しかったから便宜上作ったView。消して大丈夫。
 struct ShakeDetectionView: View {
     //インスタンス生成
-    @StateObject private var viewModel = ShakeDetectionViewModel()
+    @StateObject private var viewModel = ShakeDetection()
 
     var body: some View {
         VStack {

@@ -11,6 +11,7 @@ import Speech
 class SpeechManager: ObservableObject {
     @Published var recognizedText = ""
     @Published var countdown = 10
+    @Published var textScore = 0
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "ja-JP"))
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     private var recognitionTask: SFSpeechRecognitionTask?
@@ -58,7 +59,10 @@ class SpeechManager: ObservableObject {
         recognitionRequest?.endAudio()
         recognitionTask?.cancel()
         resetCountdown()
-        print(recognizedText)
+        print("最終テキスト: \(recognizedText)")
+        print(TextComText(text1: "あいうえおかきくけこ", text2: recognizedText))
+        textScore = TextComText(text1: "あいうえおかきくけこ", text2: recognizedText)
+
     }
 
     private func requestMicrophonePermission() {
@@ -84,5 +88,15 @@ class SpeechManager: ObservableObject {
 
     private func resetCountdown() {
         countdown = 10
+    }
+    
+    //読んだ文章と提示した文章の一致具合を判定
+    private func TextComText (text1 text_1:String, text2 text_2:String) -> Int{
+        var textScore:Int = 0
+        
+        // 文字列の一致度を計算
+        textScore = zip(text_1, text_2).filter { $0 == $1 }.count
+
+        return textScore
     }
 }

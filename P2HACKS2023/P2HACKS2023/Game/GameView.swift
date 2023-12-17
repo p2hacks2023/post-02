@@ -30,7 +30,7 @@ struct GameView: View {
                     .frame(width: sceneLaWidth, height: sceneLaHeight)
                 /* 表示位置の設定 */
                     .position(x: sceneLaWidth/2, y: sceneLaY)
-                
+
                 /* 「挨拶」ボタン表示 */
                 Button {
                     /* アクションコードここから */
@@ -45,6 +45,7 @@ struct GameView: View {
                 /* 表示位置の指定 */
                 .position(x:toSelectButtonX, y:toSelectButtonY)
                 /* 招待ボタンここまで*/
+                
                 VStack{
                     /* 「戻る」ボタン表示 */
                     Button {
