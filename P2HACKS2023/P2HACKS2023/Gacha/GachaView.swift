@@ -30,7 +30,10 @@ struct GachaView: View {
                     .frame(width: sceneLaWidth, height: sceneLaHeight)
                 /* 表示位置の設定 */
                     .position(x: sceneLaWidth/2, y: sceneLaY)
-                
+                Image("gachaTop")
+                    .resizable()
+                    .frame(width: gachaTopW, height: gachaTopH)
+                    .position(x: rangeX, y: screenH/2)
                 /* 「招待」ボタン表示 */
                 Button {
                     /* アクションコードここから */
@@ -47,7 +50,7 @@ struct GachaView: View {
                 /* フレームサイズ指定 */
                 .frame(width:toSelectButtonW, height:toSelectButtonH)
                 /* 表示位置の指定 */
-                .position(x:toSelectButtonX, y:toSelectButtonY)
+                .position(x:toSelectButtonX, y:screenH/2+screenH/4)
                 /* 招待ボタンここまで*/
                 VStack{
                     /* 「戻る」ボタン表示 */
