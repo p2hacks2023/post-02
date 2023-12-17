@@ -100,3 +100,9 @@ let resultW = CGFloat(bounds.width) - 48
 let resultH = 48.0
 let resultX = CGFloat(bounds.width)/2 + CGFloat(bounds.width)*0.265
 let resultY = CGFloat(bounds.height)/2 + 80
+
+/* 来賓読み上げテキストUI */
+let readTextW = CGFloat(bounds.width)-32
+let readTextH = 536.0
+let readTextX = CGFloat(bounds.width)/2
+let readTextY = CGFloat(bounds.height)-readTextH/4

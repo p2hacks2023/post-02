@@ -46,6 +46,10 @@ struct BattleMainView: View {
                     .foregroundColor(Color.white)
                     .bold()
                     .position(x:toSelectButtonX, y: toSelectButtonY - 320)
+                Image("scriptUI")
+                    .resizable()
+                    .frame(width: readTextW, height:readTextH)
+                    .position(x: readTextX, y: readTextY)
             }
             .navigationBarBackButtonHidden(true)
             // NavigationLink を使用して BattleShakeView に移動
