@@ -59,9 +59,9 @@ class SpeechManager: ObservableObject {
         recognitionRequest?.endAudio()
         recognitionTask?.cancel()
         resetCountdown()
-        print("最終テキスト: \(recognizedText)")
-        print(TextComText(text1: "あいうえおかきくけこ", text2: recognizedText))
-        textScore = TextComText(text1: "あいうえおかきくけこ", text2: recognizedText)
+//        print("最終テキスト: \(recognizedText)")
+//        print(TextComText(text1: "あいうえおかきくけこ", text2: recognizedText))
+        textScore = TextComText(text1: "ハッカソン開催、まことにおめでとうございます。本日は、このような立派な席にご招待いただきまして、ありがとうございます。僭越ではございますが、来賓代表の挨拶をうけたまわりました。本ハッカソンのご発展は、参加者の皆様の不眠不休の努力があってだと思われます。その皆様の姿勢に心からの敬意を表す次第でございます。常に新たな挑戦を欠かさぬ皆様のさらなる飛躍を願ってやみません。", text2: recognizedText)
 
     }
 
