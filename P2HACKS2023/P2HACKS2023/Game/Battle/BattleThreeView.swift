@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BattleThreeView: View {
     @State private var chkBool = false
-    @State private var count = 2.0
+    @State private var count = 1.0
     
     var body: some View {
         NavigationStack {

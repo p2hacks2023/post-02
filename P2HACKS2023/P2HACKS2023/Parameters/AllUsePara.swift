@@ -92,3 +92,11 @@ let strButtonY = CGFloat(bounds.height) - toSelectButtonH*2
 let gachaTopW = 256.0
 let gachaTopH = 336.0
 
+/* Spear */
+let spearW = CGFloat(bounds.width)/3 - 16.0
+let spearH = 512.0
+
+let resultW = CGFloat(bounds.width) - 48
+let resultH = 48.0
+let resultX = CGFloat(bounds.width)/2 + CGFloat(bounds.width)*0.265
+let resultY = CGFloat(bounds.height)/2 + 80

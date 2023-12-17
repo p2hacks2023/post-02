@@ -25,7 +25,6 @@ struct BattleShakeView: View {
                     .aspectRatio(contentMode: .fill)
                     .onAppear() {
                         shakeDetection.startMeasurement()
-                        
                         count = shakeDetection.countdownSeconds
                         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
                             self.count -= 1
@@ -34,15 +33,27 @@ struct BattleShakeView: View {
                                 chkBool.toggle()
                                 timer.invalidate()
                                 shakeScore = shakeDetection.shakeCount
-                                print("shakeScore")
                                 finalScore1 = (ScoreCalculation(textScore: textScore1, shakeScore: shakeScore))
-                                print("ふぁふぁふぁふぁ: \(textScore1)")
                             }
                         }
                     }
+                Image("spear")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: spearW, height: spearH)
+                    .position(x: toSelectButtonX, y: toSelectButtonY)
+                Image("hure")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: gachResultTextW, height: gachResultTextH, alignment: .bottom)
+                    .position(x: gachResultTextX, y: gachResultTextY )
                 VStack{
                     Text("\(shakeDetection.countdownSeconds)")
-                    Text("振りカウント: \(shakeDetection.shakeCount)")
+                        .font(.system(size: 105.0))
+                        .foregroundColor(Color.red)
+                        .bold()
+                        .position(x:toSelectButtonX, y: toSelectButtonY+80)
+//                    Text("振りカウント: \(shakeDetection.shakeCount)")
                 }
             }
             .navigationBarBackButtonHidden(true)
